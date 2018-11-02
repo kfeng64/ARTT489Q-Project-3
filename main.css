@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-size: 1.8rem;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -22,20 +22,32 @@ section.padded {
 section.hero {
     width: 100%;
     height: 100vh;
-    padding-top: 30rem;
-    padding-bottom: 30rem;
-    background-image: url('Header Background.jpg');
+    /* padding-top: 50vh;
+    padding-bottom: 30vh; */
+    /* padding: 20rem 0; */
+    background-image: url('imgs/Header Background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
 
+section.hero .container .row{
+    padding-top: 50vh;
+    padding-bottom: 30vh;
+}
+
+@media only screen and (max-height: 540px) {
+    section.hero .container .row{
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+    }
+}
+
 section.hero h1 {
     font-size: 10rem;
-    font-weight: bold;
-    padding: 0;
-    /* line-height: 6rem; */
+    font-weight: 600;
+    line-height: 9rem;
 }
 
 section.practice {
@@ -43,14 +55,15 @@ section.practice {
     /* color: white; */
 }
 
-section.about .container .row{
-    padding-top: 1rem;
-    /* padding-bottom: 1rem; */
+section.about .container .row .col{
+    /* padding-top: 1rem; */
+    padding-bottom: 3rem;
     text-align: center;
 }
 
 h2 {
     font-size: 4rem;
+    padding-bottom: 4rem;
 }
 
 section.about .container .row .responsive {
@@ -68,4 +81,38 @@ section.about .container .row .pic img {
     section.about .container .row .responsive {
         width: 100%;
     }
+}
+
+section.practice img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem;
+}
+
+section.practice img:hover {
+    opacity: .5;
+}
+
+section.practice .social .row {
+    justify-content: space-between;
+}
+
+section.officers {
+    text-align: center;
+}
+
+section.officers img {
+    max-width: 100%;
+    border-radius: 100%;
+    padding: 1rem 0;
+}
+
+section.officers h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+section.officers .info {
+    padding: 1rem 0;
+    font-size: 2rem;
 }
